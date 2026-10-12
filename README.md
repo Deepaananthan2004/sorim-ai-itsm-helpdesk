@@ -30,7 +30,7 @@ Open PowerShell in the project root:
 
 ```powershell
 Copy-Item .env.example .env
-py -3.11 -m venv .venv
+py -3.12 -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install --upgrade pip
 pip install -r backend\requirements.txt
