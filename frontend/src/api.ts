@@ -1,0 +1,1 @@
+import axios from 'axios';export const api=axios.create({baseURL:import.meta.env.VITE_API_BASE_URL||'http://127.0.0.1:8000/api',timeout:15000});export function errorMessage(e:unknown){if(axios.isAxiosError(e))return (e.response?.data as {detail?:string}|undefined)?.detail||e.message;return e instanceof Error?e.message:'Unexpected error'}

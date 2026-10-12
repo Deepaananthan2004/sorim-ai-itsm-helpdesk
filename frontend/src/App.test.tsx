@@ -1,0 +1,1 @@
+import {describe,it,expect} from 'vitest';import {render,screen} from '@testing-library/react';import App from './App';describe('application shell',()=>{it('renders dashboard',()=>{render(<App/>);expect(screen.getByText('Dashboard')).toBeInTheDocument();expect(screen.getByText('SERVICE DESK OVERVIEW')).toBeInTheDocument()})})
